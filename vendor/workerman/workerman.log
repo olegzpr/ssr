@@ -1,0 +1,583 @@
+2017-10-29 17:14:41 pid:23825 Workerman[server.php] start in DAEMON mode
+2017-10-29 17:15:00 pid:23874 Workerman[server.php] stop 
+2017-10-29 17:15:00 pid:23874 Workerman[server.php] not run
+2017-10-29 17:15:05 pid:23971 Workerman[server.php] start in DAEMON mode
+2017-10-29 17:15:17 pid:24016 Workerman[server.php] start in DAEMON mode
+2017-10-29 17:15:31 pid:24067 Workerman[server.php] start in DAEMON mode
+2017-10-31 00:48:54 pid:24070 Error: Class 'frontend\models\Messages' not found in /var/www/www-root/data/www/place.w4u.pp.ua/server.php:10
+Stack trace:
+#0 [internal function]: {closure}('\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:48 31.10.2017', '/source/users/7...')
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:48 31.10.2017', '/source/users/7...')
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#7 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#10 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#11 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#13 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#15 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#17 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#18 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#19 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#21 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #75)
+#22 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#24 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#26 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(29): Workerman\Worker::runAll()
+#28 {main}
+2017-10-31 00:48:54 pid:24070 Worker[24070] process terminated
+2017-10-31 00:48:56 pid:24069 worker[PHPSocketIO:24070] exit with status 64000
+2017-10-31 00:49:28 pid:29429 Workerman[server.php] stop 
+2017-10-31 00:49:28 pid:29429 Workerman[server.php] is stoping ...
+2017-10-31 00:49:28 pid:24069 Workerman[server.php] Stopping ...
+2017-10-31 00:49:28 pid:24069 Workerman[server.php] has been stopped
+2017-10-31 00:49:28 pid:29429 Workerman[server.php] stop success
+2017-10-31 00:49:32 pid:29445 Workerman[server.php] start in DEBUG mode
+2017-10-31 00:49:37 pid:29446 Error: Class 'frontend\models\Messages' not found in /var/www/www-root/data/www/place.w4u.pp.ua/server.php:10
+Stack trace:
+#0 [internal function]: {closure}('\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:49 31.10.2017', '/source/users/7...')
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:49 31.10.2017', '/source/users/7...')
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#7 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#10 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#11 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#13 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#15 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#17 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#18 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#19 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#21 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #51)
+#22 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#24 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#26 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(29): Workerman\Worker::runAll()
+#28 {main}
+2017-10-31 00:49:37 pid:29446 Worker[29446] process terminated
+2017-10-31 00:49:37 pid:29445 worker[PHPSocketIO:29446] exit with status 64000
+2017-10-31 00:51:31 pid:29445 Workerman[server.php] Stopping ...
+2017-10-31 00:51:31 pid:29445 Workerman[server.php] has been stopped
+2017-10-31 00:51:33 pid:29717 Workerman[server.php] start in DEBUG mode
+2017-10-31 00:51:40 pid:29718 Error: Class 'frontend\models\Messages' not found in /var/www/www-root/data/www/place.w4u.pp.ua/server.php:10
+Stack trace:
+#0 [internal function]: {closure}('\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:51 31.10.2017', '/source/users/7...')
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:51 31.10.2017', '/source/users/7...')
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#7 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#10 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#11 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#13 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#15 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#17 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#18 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#19 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#21 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #51)
+#22 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#24 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#26 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(29): Workerman\Worker::runAll()
+#28 {main}
+2017-10-31 00:51:40 pid:29718 Worker[29718] process terminated
+2017-10-31 00:51:40 pid:29717 worker[PHPSocketIO:29718] exit with status 64000
+2017-10-31 00:52:18 pid:29729 Error: Class 'frontend\models\Messages' not found in /var/www/www-root/data/www/place.w4u.pp.ua/server.php:10
+Stack trace:
+#0 [internal function]: {closure}('\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:52 31.10.2017', '/source/users/7...')
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:52 31.10.2017', '/source/users/7...')
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#7 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#10 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#11 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#13 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#15 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#17 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#18 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#19 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#21 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #52)
+#22 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#24 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#26 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1143): Workerman\Worker::forkWorkers()
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#28 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(29): Workerman\Worker::runAll()
+#29 {main}
+2017-10-31 00:52:18 pid:29729 Worker[29729] process terminated
+2017-10-31 00:52:18 pid:29717 worker[PHPSocketIO:29729] exit with status 64000
+2017-10-31 00:52:45 pid:29717 Workerman[server.php] Stopping ...
+2017-10-31 00:52:45 pid:29717 Workerman[server.php] has been stopped
+2017-10-31 00:52:48 pid:29827 Workerman[server.php] start in DEBUG mode
+2017-10-31 00:52:53 pid:29828 Worker[29828] process terminated with ERROR: E_ERROR "Uncaught Error: Class 'frontend\models\Messages' not found in /var/www/www-root/data/www/place.w4u.pp.ua/server.php:10
+Stack trace:
+#0 [internal function]: {closure}('\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:52 31.10.2017', '/source/users/7...')
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\x94\xD0\xB0', '+380634174568', '+380634174568', '1:52 31.10.2017', '/source/users/7...')
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecode in /var/www/www-root/data/www/place.w4u.pp.ua/server.php on line 10"
+2017-10-31 00:52:53 pid:29827 worker[PHPSocketIO:29828] exit with status 65280
+2017-10-31 08:46:03 pid:1922 Workerman[server.php] start in DEBUG mode
+2017-10-31 08:46:19 pid:1923 Error: Class 'frontend\models\Messages' not found in /var/www/www-root/data/www/place.w4u.pp.ua/server.php:10
+Stack trace:
+#0 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '9:46 31.10.2017', '/source/users/7...')
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '9:46 31.10.2017', '/source/users/7...')
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#7 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#10 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#11 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#13 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#15 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#17 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#18 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#19 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#21 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #57)
+#22 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#24 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#26 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(29): Workerman\Worker::runAll()
+#28 {main}
+2017-10-31 08:46:19 pid:1923 Worker[1923] process terminated
+2017-10-31 08:46:19 pid:1922 worker[PHPSocketIO:1923] exit with status 64000
+2017-10-31 08:47:38 pid:1922 Workerman[server.php] Stopping ...
+2017-10-31 08:47:38 pid:1922 Workerman[server.php] has been stopped
+2017-10-31 08:47:40 pid:2199 Workerman[server.php] start in DEBUG mode
+2017-10-31 08:47:52 pid:2200 Error: Class 'frontend\models\Messages' not found in /var/www/www-root/data/www/place.w4u.pp.ua/server.php:9
+Stack trace:
+#0 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '9:47 31.10.2017', '/source/users/7...')
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '9:47 31.10.2017', '/source/users/7...')
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#7 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#10 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#11 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#13 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#15 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#17 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#18 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#19 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#21 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #57)
+#22 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#24 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#26 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(28): Workerman\Worker::runAll()
+#28 {main}
+2017-10-31 08:47:52 pid:2200 Worker[2200] process terminated
+2017-10-31 08:47:52 pid:2199 worker[PHPSocketIO:2200] exit with status 64000
+2017-10-31 08:50:19 pid:2199 Workerman[server.php] Stopping ...
+2017-10-31 08:50:19 pid:2199 Workerman[server.php] has been stopped
+2017-10-31 09:10:03 pid:5742 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:10:13 pid:5742 Workerman[server.php] Stopping ...
+2017-10-31 09:10:13 pid:5742 Workerman[server.php] has been stopped
+2017-10-31 09:11:30 pid:5957 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:11:33 pid:5957 Workerman[server.php] Stopping ...
+2017-10-31 09:11:33 pid:5957 Workerman[server.php] has been stopped
+2017-10-31 09:12:32 pid:6089 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:12:34 pid:6089 Workerman[server.php] Stopping ...
+2017-10-31 09:12:34 pid:6089 Workerman[server.php] has been stopped
+2017-10-31 09:13:43 pid:6254 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:13:48 pid:6254 Workerman[server.php] Stopping ...
+2017-10-31 09:13:48 pid:6254 Workerman[server.php] has been stopped
+2017-10-31 09:17:03 pid:7002 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:17:20 pid:7007 Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(16): yii\db\BaseActiveRecord->__set('from_user', '+380634174568')
+#5 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '10:17 31.10.201...', '/source/users/7...')
+#6 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#7 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '10:17 31.10.201...', '/source/users/7...')
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#10 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#11 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#13 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#15 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#17 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#18 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#19 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#21 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#22 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#24 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#26 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #71)
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#28 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#29 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#30 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#31 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#32 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(34): Workerman\Worker::runAll()
+#33 {main}
+2017-10-31 09:17:20 pid:7007 Worker[7007] process terminated
+2017-10-31 09:17:20 pid:7002 worker[PHPSocketIO:7007] exit with status 64000
+2017-10-31 09:18:23 pid:7002 Workerman[server.php] Stopping ...
+2017-10-31 09:18:23 pid:7002 Workerman[server.php] has been stopped
+2017-10-31 09:18:23 pid:7249 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:18:26 pid:7250 Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(16): yii\db\BaseActiveRecord->__set('from_user', '+380634174568')
+#5 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '10:18 31.10.201...', '/source/users/7...')
+#6 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#7 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '10:18 31.10.201...', '/source/users/7...')
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#10 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#11 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#13 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#15 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#17 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#18 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#19 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#21 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#22 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#24 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#26 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #65)
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#28 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#29 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#30 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#31 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#32 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(35): Workerman\Worker::runAll()
+#33 {main}
+2017-10-31 09:18:26 pid:7250 Worker[7250] process terminated
+2017-10-31 09:18:26 pid:7249 worker[PHPSocketIO:7250] exit with status 64000
+2017-10-31 09:18:38 pid:7249 Workerman[server.php] Stopping ...
+2017-10-31 09:18:38 pid:7249 Workerman[server.php] has been stopped
+2017-10-31 09:18:39 pid:7296 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:18:42 pid:7297 Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(16): yii\db\BaseActiveRecord->__set('from_user', '+380634174568')
+#5 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '10:18 31.10.201...', '/source/users/7...')
+#6 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#7 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '10:18 31.10.201...', '/source/users/7...')
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#10 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#11 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#13 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#15 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#17 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#18 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#19 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#21 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#22 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#24 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#26 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #65)
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#28 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#29 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#30 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#31 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#32 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(35): Workerman\Worker::runAll()
+#33 {main}
+2017-10-31 09:18:42 pid:7297 Worker[7297] process terminated
+2017-10-31 09:18:42 pid:7296 worker[PHPSocketIO:7297] exit with status 64000
+2017-10-31 09:21:08 pid:7296 Workerman[server.php] Stopping ...
+2017-10-31 09:21:08 pid:7296 Workerman[server.php] has been stopped
+2017-10-31 09:21:09 pid:7676 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:21:11 pid:7677 Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(16): yii\db\BaseActiveRecord->__set('from_user', '+380634174568')
+#5 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '10:21 31.10.201...', '/source/users/7...')
+#6 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#7 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380634174568', '10:21 31.10.201...', '/source/users/7...')
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#10 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#11 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#13 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#15 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#17 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#18 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#19 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#21 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#22 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#24 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#26 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #65)
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#28 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#29 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#30 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#31 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#32 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(34): Workerman\Worker::runAll()
+#33 {main}
+2017-10-31 09:21:11 pid:7677 Worker[7677] process terminated
+2017-10-31 09:21:11 pid:7676 worker[PHPSocketIO:7677] exit with status 64000
+2017-10-31 09:22:16 pid:7676 Workerman[server.php] Stopping ...
+2017-10-31 09:22:16 pid:7676 Workerman[server.php] has been stopped
+2017-10-31 09:22:17 pid:7837 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:22:40 pid:7837 Workerman[server.php] Stopping ...
+2017-10-31 09:22:40 pid:7837 Workerman[server.php] has been stopped
+2017-10-31 09:22:41 pid:7886 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:24:27 pid:7886 Workerman[server.php] Stopping ...
+2017-10-31 09:24:27 pid:7886 Workerman[server.php] has been stopped
+2017-10-31 09:24:30 pid:8204 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:24:34 pid:8205 Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(16): yii\db\BaseActiveRecord->__set('from_user', '+380507777777')
+#5 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380507777777', '10:24 31.10.201...', '/images/no-phot...')
+#6 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#7 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380507777777', '10:24 31.10.201...', '/images/no-phot...')
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#10 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#11 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#13 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#15 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#17 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#18 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#19 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#21 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#22 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#24 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#26 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #65)
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#28 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#29 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#30 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#31 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#32 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(30): Workerman\Worker::runAll()
+#33 {main}
+2017-10-31 09:24:34 pid:8205 Worker[8205] process terminated
+2017-10-31 09:24:34 pid:8204 worker[PHPSocketIO:8205] exit with status 64000
+2017-10-31 09:25:55 pid:8204 Workerman[server.php] Stopping ...
+2017-10-31 09:25:55 pid:8204 Workerman[server.php] has been stopped
+2017-10-31 09:25:56 pid:8415 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:25:59 pid:8416 Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(16): yii\db\BaseActiveRecord->__set('from_user', '+380507777777')
+#5 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380507777777', '10:25 31.10.201...', '/images/no-phot...')
+#6 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#7 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380507777777', '10:25 31.10.201...', '/images/no-phot...')
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#10 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#11 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#13 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#15 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#17 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#18 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#19 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#21 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#22 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#24 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#26 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #66)
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#28 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#29 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#30 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#31 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#32 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(30): Workerman\Worker::runAll()
+#33 {main}
+2017-10-31 09:25:59 pid:8416 Worker[8416] process terminated
+2017-10-31 09:25:59 pid:8415 worker[PHPSocketIO:8416] exit with status 64000
+2017-10-31 09:26:20 pid:8415 Workerman[server.php] Stopping ...
+2017-10-31 09:26:20 pid:8415 Workerman[server.php] has been stopped
+2017-10-31 09:26:22 pid:8474 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:26:24 pid:8478 Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(17): yii\db\BaseActiveRecord->__set('from_user', '+380507777777')
+#5 [internal function]: {closure}('\xD0\xB4\xD0\xB0', '+380634174568', '+380507777777', '10:26 31.10.201...', '/images/no-phot...')
+#6 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Object(Closure), Array)
+#7 [internal function]: PHPSocketIO\Event\Emitter->emit('new message', '\xD0\xB4\xD0\xB0', '+380634174568', '+380507777777', '10:26 31.10.201...', '/images/no-phot...')
+#8 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(307): call_user_func_array(Array, Array)
+#9 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#10 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#11 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#12 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#13 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Parser/Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#14 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Client.php(182): PHPSocketIO\Parser\Decoder->add('2["new message"...')
+#15 [internal function]: PHPSocketIO\Client->ondata('2["new message"...')
+#16 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#17 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["new message"...')
+#18 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#19 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Event/Emitter.php(91): call_user_func_array(Array, Array)
+#20 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#21 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#22 [internal function]: PHPSocketIO\Engine\Transport->onData('42["new message...')
+#23 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(26): call_user_func(Array, '42["new message...')
+#24 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["new message...')
+#25 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Connection/TcpConnection.php(629): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["new message...')
+#26 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #65)
+#27 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#28 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1723): Workerman\Events\Select->loop()
+#29 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(1025): Workerman\Worker->run()
+#30 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(988): Workerman\Worker::forkOneWorker(Object(Workerman\Worker))
+#31 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/workerman/workerman/Worker.php(431): Workerman\Worker::forkWorkers()
+#32 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(31): Workerman\Worker::runAll()
+#33 {main}
+2017-10-31 09:26:24 pid:8478 Worker[8478] process terminated
+2017-10-31 09:26:24 pid:8474 worker[PHPSocketIO:8478] exit with status 64000
+2017-10-31 09:30:32 pid:8474 Workerman[server.php] Stopping ...
+2017-10-31 09:30:32 pid:8474 Workerman[server.php] has been stopped
+2017-10-31 09:35:27 pid:9790 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:35:31 pid:9791 Worker[9791] process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/frontend/models/Messages.php(22): yii\db\BaseActiveRecord->__set('from_user', '+380507777777')
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(17): frontend\models\Messages->saveMessage('+380507777777', '+380634174568', '\xD0\xB4\xD0\xB0', '10:35 31.10.201...')
+#6 [internal funct in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php on line 133"
+2017-10-31 09:35:31 pid:9790 worker[PHPSocketIO:9791] exit with status 65280
+2017-10-31 09:36:04 pid:9790 Workerman[server.php] Stopping ...
+2017-10-31 09:36:04 pid:9790 Workerman[server.php] has been stopped
+2017-10-31 09:36:05 pid:9854 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:36:48 pid:9854 Workerman[server.php] Stopping ...
+2017-10-31 09:36:48 pid:9854 Workerman[server.php] has been stopped
+2017-10-31 09:36:49 pid:9931 Workerman[server.php] start in DEBUG mode
+2017-10-31 09:36:52 pid:9932 Worker[9932] process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getDb() on null in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php:133
+Stack trace:
+#0 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(328): yii\db\ActiveRecord::getDb()
+#1 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php(364): yii\db\ActiveRecord::getTableSchema()
+#2 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(464): yii\db\ActiveRecord->attributes()
+#3 /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/BaseActiveRecord.php(303): yii\db\BaseActiveRecord->hasAttribute('from_user')
+#4 /var/www/www-root/data/www/place.w4u.pp.ua/frontend/models/Messages.php(23): yii\db\BaseActiveRecord->__set('from_user', '+380507777777')
+#5 /var/www/www-root/data/www/place.w4u.pp.ua/server.php(17): frontend\models\Messages->saveMessage('+380507777777', '+380634174568', '\xD0\xB4\xD0\xB0', '10:36 31.10.201...')
+#6 [internal funct in /var/www/www-root/data/www/place.w4u.pp.ua/vendor/yiisoft/yii2/db/ActiveRecord.php on line 133"
+2017-10-31 09:36:52 pid:9931 worker[PHPSocketIO:9932] exit with status 65280
+2017-10-31 09:38:01 pid:9931 Workerman[server.php] Stopping ...
+2017-10-31 09:38:01 pid:9931 Workerman[server.php] has been stopped
+2017-11-18 10:16:42 pid:13245 Workerman[server.php] start in DEBUG mode
+2017-11-25 10:07:05 pid:13787 Workerman[server.php] start in DAEMON mode
+2018-02-17 10:24:32 pid:22286 Workerman[server.php] start in DAEMON mode
+2018-02-17 10:28:33 pid:23194 Workerman[server.php] start in DAEMON mode
+2018-02-17 10:28:33 pid:23194 Workerman[server.php] already running
+2018-02-17 10:30:00 pid:23542 Workerman[server.php] stop 
+2018-02-17 10:30:00 pid:23542 Workerman[server.php] is stoping ...
+2018-02-17 10:30:00 pid:22288 Workerman[server.php] stopping ...
+2018-02-17 10:30:00 pid:22288 Workerman[server.php] has been stopped
+2018-02-17 10:30:00 pid:23542 Workerman[server.php] stop success
+2018-02-17 10:30:04 pid:23674 Workerman[server.php] start in DEBUG mode
+2018-02-17 10:30:27 pid:23674 Workerman[server.php] stopping ...
+2018-02-17 10:30:27 pid:23674 Workerman[server.php] has been stopped
+2018-02-17 10:30:54 pid:23925 Workerman[server.php] start in DEBUG mode
+2018-02-17 10:46:26 pid:23925 Workerman[server.php] stopping ...
+2018-02-17 10:46:26 pid:23925 Workerman[server.php] has been stopped
