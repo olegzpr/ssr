@@ -1,0 +1,67 @@
+.loadedImage .item{
+    width: 150px;
+    height: 150px;
+    margin: 0 20px 20px 0;
+    float: left;
+    position: relative;
+}
+
+.loadedImage .item i{
+    font-size: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: red;
+    cursor: pointer;
+}
+
+.loadedImage{
+    margin-top: 20px;
+}
+
+.loadedImage .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.modal-files{
+    width: 96%;
+}
+
+.file .file-name{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.allBoxFiles .file input[type=checkbox]{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.btn-danger{
+    background-color: black;
+    border-color: black;
+}
+
+.btn-danger:hover, .btn-danger:active, .btn-danger:focus, .btn-danger:active:hover{
+    background-color: black;
+    border-color: black;
+}
+
+.btn-info, .btn-success, .btn-primary{
+    background-color: #c40f14;
+    border-color: #c40f14;
+}
+
+.btn-info:hover, .btn-info:active, .btn-success:hover, .btn-success:active, .btn-info:focus, .btn-success:focus, .btn-info:active:hover, .btn-success:active:hover, .btn-primary:hover, .btn-primary:active, .btn-primary:active:hover, .btn-primary:focus{
+    background-color: rgba(196, 15, 20, .7);
+    border-color: rgba(196, 15, 20, .7);
+}
+
+.modal-backdrop.in{
+    opacity: .5!important;
+}
