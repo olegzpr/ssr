@@ -1,0 +1,29 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, input, button { margin:0; padding:0;border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; text-decoration: none; outline: none; }
+body { line-height:1; }
+ol, ul { list-style:none }
+blockquote, q { quotes:none }
+blockquote:before, blockquote:after, q:before, q:after { content:'' }
+ins { text-decoration:none }
+del { text-decoration:line-through }
+table { border-collapse:collapse; border-spacing:0 }
+
+article, aside, figure, figcaption, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+button, a{
+  cursor: pointer;
+}
+
+a:hover, a:focus, a:focus:active{
+  text-decoration: none;
+  outline: none;
+}
+
+input:hover, input:focus, input:focus:active, textarea:hover, textarea:focus, textarea:focus:active, button:hover, button:focus, button:focus:active,  button:active:focus{
+  outline: none!important;
+}
+
+img{
+  max-width: 100%;
+}
