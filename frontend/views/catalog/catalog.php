@@ -1,6 +1,7 @@
 <?php
 
 use yii\bootstrap\Html;
+use frontend\components\CurrencyWidget;
 
 $this->title = 'База квартир';
 $this->params['page'] = 'catalog';
@@ -43,7 +44,18 @@ JS;
         $this->registerJs($script, yii\web\View::POS_READY);
     }
 }
+$js = <<< JS
+$('document').ready(function(){
+	$('#currency').change(function() {
+            $.post('ajax/set-currency',{'currency':$(this).val()},function(data){
+                window.location.reload();
+            });
+	});
+});
+JS;
+$this->registerJs($js);
 $_SESSION['GET'] = json_encode(Yii::$app->request->get());
+
 ?>
 <div class="container">
     <div class="breadcrumbs-wrapper">
@@ -310,9 +322,12 @@ $_SESSION['GET'] = json_encode(Yii::$app->request->get());
                             </select>
                         </div>
                         <div class="sortbox">
-                            <select class="styled-select">
+                            <select class="styled-select" id="currency">
+                                <!--
                                 <option value="1">Гривны</option>
                                 <option value="2">Долары</option>
+							-->
+				<?php echo frontend\components\CurrencyWidget::widget(['select'=>'yes']); ?>
                             </select>
                         </div>
                     </div>

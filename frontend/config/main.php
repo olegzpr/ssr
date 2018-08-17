@@ -88,6 +88,7 @@ return [
                 'news/<pref:[a-zA-Z0-9-_]+>' => 'site/news',
                 'users/<id:\d+>' => 'users/user-page',
                 'send-code' => 'site/send-code',
+                'ajax/set-currency' => 'ajax/set-currency',
             ],
         ],
 

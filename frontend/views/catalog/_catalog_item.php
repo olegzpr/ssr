@@ -16,7 +16,7 @@
                 <div class="title"><a href="<?=$url?>"><?=$name?></a></div>
             </div>
             <div class="catalog-item-price">
-                <div class="price"><a href="<?=$url?>"><?=$price?> грн.</a></div>
+                <div class="price"><a href="<?=$url?>"><?php echo frontend\components\CurrencyWidget::widget(['price'=>$price]); ?>.</a></div>
                 <div class="phone" data-action="show_phone" data-phone="<?=substr($phone, 0, 13)?>"><i class="fa fa-phone"></i> <?=\common\models\Helper::getShortText($phone, 8)?></div>
             </div>
             <div class="catalog-item-text">

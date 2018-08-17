@@ -1001,7 +1001,7 @@ class AjaxController extends Controller
                 } else {
                     echo 'btn-secondary';
                 } ?>"><?php echo $step['name'] ?></button>
-                <?
+                <?php
                 $s++;
             }
             ?>
@@ -1027,7 +1027,7 @@ class AjaxController extends Controller
                     </div>
                 </div>
             </div>
-            <?
+            <?php
         }
     }
 
@@ -1112,7 +1112,7 @@ class AjaxController extends Controller
                 } else {
                     echo 'btn-secondary';
                 } ?>"><?php echo $step['name'] ?></button>
-                <?
+                <?php
                 $s++;
             }
             ?>
@@ -1138,7 +1138,7 @@ class AjaxController extends Controller
                     </div>
                 </div>
             </div>
-            <?
+            <?php
         } else {
             ?>
             <div class="row">
@@ -1154,7 +1154,7 @@ class AjaxController extends Controller
                     </div>
                 </div>
             </div>
-            <?
+            <?php
         }
     }
 
@@ -1309,23 +1309,23 @@ class AjaxController extends Controller
     }
 
     public function actionCityList(){
-        ?>
-        <option>Город</option>
-        <?php
+        
+        echo '<option>Город</option>';
+        
         $rayons = GeoCity::find()->where(['region'=>Yii::$app->request->post('region')])->orderBy('name')->distinct('name')->all();
         foreach ($rayons as $rayon) {
-            ?>
-            <option value="<?= $rayon['id'] ?>"><?= $rayon['name'] ?></option>
-            <?php
+            
+            echo '<option value="', $rayon['id'],'"><', $rayon['name'], '</option>';
+            
         }
     }
 
     public function actionAreaList(){
         $areas = GeoArea::find()->where(['city'=>Yii::$app->request->post('city')])->orderBy('name')->all();
         foreach ($areas as $area) {
-            ?>
-            <option value="<?= $area['id'] ?>"><?= $area['name'] ?></option>
-            <?php
+            
+            echo '<option value="', $area['id'], '"><', $area['name'], '</option>';
+            
         }
     }
 
@@ -1348,5 +1348,14 @@ class AjaxController extends Controller
         } else {
             echo 'error';
         }
+    }
+    
+    public function actionSetCurrency(){
+        $var = Yii::$app->request->post('currency');
+        $count = Settings::find()->where(["name" => $var])->count();
+        if( $count != 0 ){
+            $_SESSION['currencySite'] = $var;
+        }
+        return true;
     }
 }

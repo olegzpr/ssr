@@ -33,6 +33,7 @@ class CatalogController extends Controller
     /**
      * @inheritdoc
      */
+    private $currencySite;
     public function behaviors()
     {
         return [
@@ -79,6 +80,8 @@ class CatalogController extends Controller
      */
     public function actionCatalog()
     {
+        $this->currencySite =(isset($_SESSION['currencySite']))?$_SESSION['currencySite']:'uah';
+        $_SESSION['currencySite'] = $this->currencySite;
         if (isset($_GET['city'])){
             $region = GeoCity::findOne($_GET['city']);
             $_SESSION['filters']['region'] = $region['region'];

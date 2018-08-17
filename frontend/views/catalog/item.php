@@ -329,16 +329,15 @@ use yii\bootstrap\Html;
                         ?>
                         <div class="card-right-price" id="price-box" data-usd="<?= $price_usd ?>"
                              data-uah="<?= $price ?>">
-                            <?= $price ?><span>грн <i class="fa fa-chevron-down"></i></span>
+                            <span><?php echo frontend\components\CurrencyWidget::widget(['price'=>$price]); ?>. <i class="fa fa-chevron-down"></i></span>
                         </div>
                         <div class="card-right-price-per">
                             <?php
                             $place = \frontend\models\Items::getPropLabel($model['id'], '_place_');
                             if (!empty($place)) {
-                                echo round($price / $place, 0);
+                                echo frontend\components\CurrencyWidget::widget(['price'=>($price/$place)]);
                             }
-                            ?>
-                            грн/м<sup>2</sup></div>
+                            ?>/м<sup>2</sup></div>
                     </div>
                 </div>
                 <div class="card-right">
